@@ -1,0 +1,6 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+
+<p><%= link_to "Edit article", editArticle_path(@article) %></p>
+<p><%= link_to "Delete article", article_path(@article), method: :delete  %></p>
+<%= link_to "Wikinimous", articles_path %>
